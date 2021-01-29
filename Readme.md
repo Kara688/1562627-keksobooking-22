@@ -1,7 +1,7 @@
 # Личный проект «Кексобукинг»
 
 * Студент: [Karina Смирнова](https://up.htmlacademy.ru/javascript/22/user/1562627).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Кузнецов](https://htmlacademy.ru/profile/knenkne).
 
 ---
 
