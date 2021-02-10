@@ -14,25 +14,45 @@ function getRandomFloat( from, to, decimal = 2) {
     return + (Math.random() * (to - from) + from).toFixed (decimal)
   }
 }
-
-
-const types = ['flat', 'bungalow', 'palace']
-const MIN_PRICE = 1
-const MAX_PRICE = 10000
-
-const getRandomOffer = () => {
-  return {
-    offer: {
-     type:
-     types[Math.floor(Math.random()*types.length)];
-
-     price:
-
-     if (MIN_PRICE > MAX_PRICE && MAX_PRICE >= 0) {
-      return + (Math.random() * (MIN_PRICE - MAX_PRICE) + MAX_PRICE).toFixed(3)
-    }
-    }
-
-    }
-  }
+function getRandomElement(items) {
+// "|" for a kinda "int div"
+  return items[items.length * Math.random() | 0];
 }
+
+const types = ['palace', 'flat', 'house', 'bungalow']
+const checks = ['12:00', '13:00', '14:00']
+const titles = ['двухместный номер', 'трёхместный номер', 'номер кинг сайз']
+const rooms =  [25, 30, 45 ]
+const guests = [2, 1]
+
+
+const offer = {
+  author: {
+    avatar:'img/avatars/user01.png'
+  },
+  offer: {
+    title:  getRandomElement,
+    address: '100, 200',
+    price: getRandomInteger(10, 100),
+    type: getRandomElement(types),
+    rooms: getRandomElement,
+    guests: getRandomElement,
+    checkin: getRandomElement(checks),
+    checkout: getRandomElement(checks),
+    features: ['wifi', 'dishwasher', 'parking', 'washer', 'elevator', 'conditioner'],
+    description: 'small',
+    photos: [
+    'http://o0.github.io/assets/images/tokyo/hotel1.jpg',
+    'http://o0.github.io/assets/images/tokyo/hotel2.jpg',
+    'http://o0.github.io/assets/images/tokyo/hotel3.jpg']
+  },
+  location: {
+    x: (35.65000, 35.70000)
+    y: (139.70000, 139.80000)
+  }
+
+}
+console.log(offer);
+
+
+
