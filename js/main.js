@@ -47,7 +47,7 @@ const offer = {
     'http://o0.github.io/assets/images/tokyo/hotel3.jpg']
   },
   location: {
-    x: (35.65000, 35.70000)
+    x: (35.65000, 35.70000),
     y: (139.70000, 139.80000)
   }
 
