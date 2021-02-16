@@ -1,5 +1,4 @@
 'use strict'
-import './util.js';
 import {getRandomInteger, getRandomFloat, getRandomElement, getRandomNumberBetween} from './util.js';
 
 const types = ['palace', 'flat', 'house', 'bungalow']
