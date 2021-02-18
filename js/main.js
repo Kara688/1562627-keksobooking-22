@@ -31,12 +31,12 @@ const offer = {
     avatar:'img/avatars/user01.png'
   },
   offer: {
-    title:  getRandomElement,
+    title:  getRandomElement(title),
     address: '100, 200',
     price: getRandomInteger(10, 100),
     type: getRandomElement(types),
-    rooms: getRandomElement,
-    guests: getRandomElement,
+    rooms: getRandomElement(rooms),
+    guests: getRandomElement(guests),
     checkin: getRandomElement(checks),
     checkout: getRandomElement(checks),
     features: ['wifi', 'dishwasher', 'parking', 'washer', 'elevator', 'conditioner'],
@@ -47,8 +47,8 @@ const offer = {
     'http://o0.github.io/assets/images/tokyo/hotel3.jpg']
   },
   location: {
-    x: (35.65000, 35.70000),
-    y: (139.70000, 139.80000)
+    x: getRandomFloat (35.65000, 35.70000),
+    y: getRandomFloat(139.70000, 139.80000)
   }
 
 }
