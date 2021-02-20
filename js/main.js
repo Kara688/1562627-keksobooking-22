@@ -26,33 +26,48 @@ const rooms =  [25, 30, 45 ]
 const guests = [2, 1]
 
 
-const offer = {
-  author: {
-    avatar:'img/avatars/user01.png'
-  },
-  offer: {
-    title:  getRandomElement(title),
-    address: '100, 200',
-    price: getRandomInteger(10, 100),
-    type: getRandomElement(types),
-    rooms: getRandomElement(rooms),
-    guests: getRandomElement(guests),
-    checkin: getRandomElement(checks),
-    checkout: getRandomElement(checks),
-    features: ['wifi', 'dishwasher', 'parking', 'washer', 'elevator', 'conditioner'],
-    description: 'small',
-    photos: [
-    'http://o0.github.io/assets/images/tokyo/hotel1.jpg',
-    'http://o0.github.io/assets/images/tokyo/hotel2.jpg',
-    'http://o0.github.io/assets/images/tokyo/hotel3.jpg']
-  },
-  location: {
-    x: getRandomFloat (35.65000, 35.70000),
-    y: getRandomFloat(139.70000, 139.80000)
+
+
+function getCreateOffer() {
+  let array = []
+  for(let i = 0; i <= 10; i++) {
+    const offer = {
+      author: {
+        avatar:'img/avatars/user01.png'
+      },
+      offer: {
+        title:  getRandomElement(title),
+        address: '100, 200',
+        price: getRandomInteger(10, 100),
+        type: getRandomElement(types),
+        rooms: getRandomElement(rooms),
+        guests: getRandomElement(guests),
+        checkin: getRandomElement(checks),
+        checkout: getRandomElement(checks),
+        features: ['wifi', 'dishwasher', 'parking', 'washer', 'elevator', 'conditioner'],
+        description: 'small',
+        photos: [
+        'http://o0.github.io/assets/images/tokyo/hotel1.jpg',
+        'http://o0.github.io/assets/images/tokyo/hotel2.jpg',
+        'http://o0.github.io/assets/images/tokyo/hotel3.jpg']
+      },
+      location: {
+        x: getRandomFloat (35.65000, 35.70000),
+        y: getRandomFloat(139.70000, 139.80000)
+      }
+
+    }
+
+    array[i] = offer
+
+
   }
 
-}
-console.log(offer);
+  return array;
 
+}
+
+ let myFunc = getCreateOffer()
+ console.log(myFunc)
 
 
