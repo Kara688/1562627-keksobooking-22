@@ -18,7 +18,7 @@ function getRandomElement(items) {
 
 const types = ['palace', 'flat', 'house', 'bungalow']
 const checks = ['12:00', '13:00', '14:00']
-const title = ['двухместный номер', 'трёхместный номер', 'номер кинг сайз']
+const titles = ['двухместный номер', 'трёхместный номер', 'номер кинг сайз']
 const rooms =  [25, 30, 45 ]
 const guests = [2, 1]
 
@@ -33,7 +33,7 @@ function CreateOffer() {
         avatar: 'img/avatars/user01.png',
       },
       offer: {
-        title:  getRandomElement(title),
+        title:  getRandomElement(titles),
         address: '100, 200',
         price: getRandomInteger(10, 100),
         type: getRandomElement(types),
