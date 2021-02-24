@@ -6,6 +6,6 @@ const titles = ['двухместный номер', 'трёхместный н�
 const rooms =  [25, 30, 45 ]
 const guests = [2, 1]
 
-export(types, checks, titles, rooms, guests)
+export {types, checks, titles, rooms, guests};
 
 
