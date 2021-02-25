@@ -1,4 +1,4 @@
-'use strict'
-import('./js/utils.js')
+
+import {createOffers} from './js/offers.js';
 
 

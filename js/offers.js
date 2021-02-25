@@ -1,5 +1,5 @@
-import ('./js/data.js')
-export{createOffers};
+import {types, checks, titles, rooms, guests} from './js/data.js';
+export {createOffers}
 
 function createOffers() {
   let array = []
@@ -7,7 +7,7 @@ function createOffers() {
 
     const offer = {
       author: {
-        avatar: [i],
+        avatar: 'img/avatars/user0' + i +'.png',
       },
       offer: {
         title:  getRandomElement(titles),
@@ -44,6 +44,7 @@ function createOffers() {
 
 }
 
-let offers = createOffers();
+const offers = createOffers();
+
 
 
