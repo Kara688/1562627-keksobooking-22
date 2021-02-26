@@ -1,5 +1,5 @@
 import {types, checks, titles, rooms, guests} from './js/data.js';
-export {createOffers}
+
 
 function createOffers() {
   let array = []
@@ -45,6 +45,8 @@ function createOffers() {
 }
 
 const offers = createOffers();
+
+export {offres}
 
 
 

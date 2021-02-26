@@ -1,4 +1,4 @@
 
-import {createOffers} from './js/offers.js';
+import {offers} from './js/offers.js';
 
 
