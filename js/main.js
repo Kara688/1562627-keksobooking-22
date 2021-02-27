@@ -1,4 +1,12 @@
 
-import {offers} from './js/offers.js';
+
+
+import {createOffers} from './offers.js'
+
+ let offers = createOffers();
+
+
+
+
 
 

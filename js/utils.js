@@ -23,6 +23,6 @@ function getRandomNumberBetween(min,max){
 }
 
 
-
+export {getRandomElement, getRandomInteger};
 
 

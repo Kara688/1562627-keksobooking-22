@@ -1,5 +1,5 @@
-import {types, checks, titles, rooms, guests} from './js/data.js';
-
+import {types, checks, titles, rooms, guests} from './data.js'
+import {getRandomElement, getRandomInteger} from './utils.js'
 
 function createOffers() {
   let array = []
@@ -32,9 +32,6 @@ function createOffers() {
 
     }
 
-
-
-
     array[i] = offer
 
 
@@ -43,10 +40,4 @@ function createOffers() {
   return array;
 
 }
-
-const offers = createOffers();
-
-export {offres}
-
-
 
