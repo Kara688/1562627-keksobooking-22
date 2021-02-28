@@ -3,10 +3,7 @@ function getRandomInteger (min, max) {
   let rand = min - 0.5 + Math.random () * (max - min + 1);
   return Math.round (rand);
 }
-
-console.log(getRandomInteger (1, 3) );
-
- // (https://learn.javascript.ru/task/random-int-min-max)
+// (https://learn.javascript.ru/task/random-int-min-max)
 
 function getRandomFloat( from, to, decimal = 2) {
   if (to > from && from >= 0) {
@@ -23,6 +20,6 @@ function getRandomNumberBetween(min,max){
 }
 
 
-export {getRandomElement, getRandomInteger};
+export {getRandomElement, getRandomInteger, getRandomFloat };
 
 
