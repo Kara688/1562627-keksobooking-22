@@ -4,4 +4,3 @@ let offers = createOffers();
 
 
 
-
