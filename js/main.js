@@ -1,7 +1,7 @@
 
 
 
-import {createOffers} from './offers.js'
+import {createOffers} from 'offers.js'
 
  let offers = createOffers();
 

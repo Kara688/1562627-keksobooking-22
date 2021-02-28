@@ -1,5 +1,5 @@
-import {types, checks, titles, rooms, guests} from './data.js'
-import {getRandomElement, getRandomInteger} from './utils.js'
+import {types, checks, titles, rooms, guests} from 'data.js'
+import {getRandomElement, getRandomInteger} from 'utils.js'
 
 function createOffers() {
   let array = []
